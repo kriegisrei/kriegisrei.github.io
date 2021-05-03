@@ -7,15 +7,15 @@
         
         
         
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Readme - Krieg is Rei</title>
-        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>OBS and Citra - Krieg is Rei</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css">
 
-        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../../..">Krieg is Rei</a>
+                <a class="navbar-brand" href="..">Krieg is Rei</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,30 +34,30 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="../../.." class="nav-link">Home</a>
+                                <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../../list/" class="dropdown-item">List of guides</a>
+    <a href="../list/" class="dropdown-item">List of guides</a>
 </li>
                                     
 <li>
-    <a href="../../../cheats/" class="dropdown-item">Checkpoint Cheats</a>
+    <a href="../cheats/" class="dropdown-item">Checkpoint Cheats</a>
 </li>
                                     
 <li>
-    <a href="../../../jindosh/" class="dropdown-item">Jindosh Riddle Solver</a>
+    <a href="../jindosh/" class="dropdown-item">Jindosh Riddle Solver</a>
 </li>
                                     
 <li>
-    <a href="../../../arenachess/" class="dropdown-item">Arenachess with Stockfish</a>
+    <a href="../arenachess/" class="dropdown-item">Arenachess with Stockfish</a>
 </li>
                                     
 <li>
-    <a href="../../../obscitra/" class="dropdown-item">OBS and Citra</a>
+    <a href="./" class="dropdown-item active">OBS and Citra</a>
 </li>
                                 </ul>
                             </li>
@@ -66,11 +66,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../../pq2stuff/" class="dropdown-item">Persona Q2 Shenanigans</a>
+    <a href="../pq2stuff/" class="dropdown-item">Persona Q2 Shenanigans</a>
 </li>
                                     
 <li>
-    <a href="../../../p5sStuff/" class="dropdown-item">Persona 5 Scramble Shenanigans</a>
+    <a href="../p5sStuff/" class="dropdown-item">Persona 5 Scramble Shenanigans</a>
 </li>
                                 </ul>
                             </li>
@@ -82,6 +82,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../arenachess/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../pq2stuff/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -99,12 +109,104 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#recording-3ds-gameplay-with-citra-and-obs" class="nav-link">Recording 3DS Gameplay with Citra and OBS</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#prerequisites" class="nav-link">Prerequisites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#getting-started" class="nav-link">Getting Started</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#recording" class="nav-link">Recording</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#extras" class="nav-link">Extras</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p>dummy file</p></div>
+<h1 id="recording-3ds-gameplay-with-citra-and-obs"><strong>Recording 3DS Gameplay with Citra and OBS</strong></h1>
+<p>Citra is a 3DS emulator that has seen very good development in recent years. Many games are playable, and many games run flawlessly, you can have your 3DS games look better than they do on actual hardware.</p>
+<p>OBS is a very versatile piece of software that will allow you to record/stream Citra (and other stuff).</p>
+<h2 id="prerequisites"><strong>Prerequisites</strong></h2>
+<p>Note that this is more of an advanced guide for users who are tech savvy and want the best quality possible while recording their 3DS gameplay. If you don't want to go through all the following steps or quality doesn't matter to you, <a href="https://github.com/RattletraPM/Snickerstream/wiki/Streaming-with-NTR">check out Snickerstream</a></p>
+<ol>
+<li>
+<p><a href="https://citra-emu.org/download/">Citra</a></p>
+</li>
+<li>
+<p><a href="https://obsproject.com/">OBS</a></p>
+</li>
+<li>
+<p>A 3DS with <a href="https://3ds.hacks.guide">Custom Firmware</a></p>
+</li>
+<li>
+<p>A computer capable of emulating and recording.</p>
+</li>
+</ol>
+<h2 id="getting-started"><strong>Getting Started</strong></h2>
+<ol>
+<li>
+<p>Install OBS and Citra</p>
+</li>
+<li>
+<p>If your game hasn't been dumped yet, <a href="https://github.com/knight-ryu12/godmode9-layeredfs-usage/wiki/Godmode9-CIA-Dumping-and-Building">follow the dump guide</a></p>
+</li>
+<li>
+<p>Once your game is dumped, transfer it to your computer via SD or FTP. The dumped game will be located in <code>/gm9/out</code> on your SD.</p>
+</li>
+<li>
+<p>Open Citra. </p>
+<ol>
+<li>If you have a .3DS file press <code>File &gt; Load File</code> then select your .3DS file. </li>
+<li>If you have a .CIA, press <code>File &gt; Install CIA</code> then select your .CIA file.</li>
+</ol>
+</li>
+<li>
+<p>Open your game that you want to record. Keep Citra open for the next steps.</p>
+</li>
+</ol>
+<h2 id="recording">Recording</h2>
+<ol>
+<li>
+<p>Open OBS</p>
+</li>
+<li>
+<p>Down where it says <code>Sources</code>, press <code>+</code> to add a new source.</p>
+</li>
+<li>
+<p>Press <code>Game Capture</code>, and name the source whatever you want, then press OK.</p>
+</li>
+<li>
+<p>You should get brought to a screen that says Properties for your source. Press the box next to <code>Mode</code> and select <code>Capture specific window</code>.</p>
+</li>
+<li>
+<p>Next to where it says window, choose `[Citra-qt.exe]: Citra (version) | game).</p>
+</li>
+<li>
+<p>You should see your Citra window in OBS. You can resize the window by dragging it.</p>
+</li>
+<li>
+<p>Once its set to your liking, press <code>Start Recording</code> in OBS.</p>
+</li>
+<li>
+<p>You are done!</p>
+</li>
+</ol>
+<p><img alt="obs" src="../img/obs.png" /></p>
+<h2 id="extras">Extras</h2>
+<p>To view your recording, in OBS press <code>File &gt; Show Recordings</code>.</p>
+<p>To transfer your 3DS save to Citra, <a href="https://citra-emu.org/wiki/dumping-save-data-from-a-3ds-console/">check out this guide</a></p></div>
             </div>
         </div>
 
@@ -113,11 +215,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "../../..",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
